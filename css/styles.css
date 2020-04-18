@@ -95,6 +95,17 @@ header li a:hover {
     border: azure solid;
 }
 
+.content-block > h2 {
+    font-size: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.content-block > p {
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 .content-block:hover {
     border: red solid;
 }
@@ -136,7 +147,7 @@ footer a {
     padding-left: 35px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 850px) {
     header nav, header li,
     .content-block, #content {
         width: 100%;

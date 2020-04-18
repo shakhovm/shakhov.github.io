@@ -28,7 +28,8 @@ section#content image {
     /*padding: 0;*/
 }
 
-@media (max-width: 1267px) {
+@media (max-width: 1260px) {
+
     .code-review {
         float: none;
     }
