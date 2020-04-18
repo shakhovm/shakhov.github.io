@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form_page_style.css">
+    <link rel="stylesheet" href="css/html_page_style.css">
+    <title>Title</title>
+
+</head>
+<body>
+
+<header>
+    <div class="header-block">
+        <img src="images/logo-round-ukr.png" alt="" width="317" height="300">
+
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_page.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="main-article">
+    <div class="container">
+        <p>The float property was introduced to allow web developers to implement simple layouts involving an image floating inside a column of text, with the text wrapping around the left or right of it. The kind of thing you might get in a newspaper layout.
+
+            But web developers quickly realized that you can float anything, not just images, so the use of float broadened. Our fancy paragraph example from earlier in the course shows how you can use float in the creation of a fun drop-cap effect.
+
+            Floats have commonly been used to create entire web site layouts featuring multiple columns of information floated so they sit alongside one another (the default behavior would be for the columns to sit below one another, in the same order as they appear in the source). There are newer, better layout techniques available and so use of floats in this way should be regarded as a legacy technique.</p>
+    </div>
+</section>
+
+
+<section id="content">
+
+
+    <div class="container">
+        <article>
+            <p>So let's think about how the float works —
+                the element with the float set on it (the &lt;div&gt; element in this case) is taken out of the normal
+                layout flow of the document and stuck to the left-hand side of its parent container (&lt;body&gt;, in this case). Any content that comes below the floated element in the normal layout flow will now wrap around it, filling up the space to the right-hand side of it as far up as the top of the floated element
+            </p>
+            <img src="images/first_float.png" alt="">
+            <div class="code-review">
+
+                <h1>Example</h1>
+
+                <div style="width: 150px;
+                            float: left;
+                            height: 100px;
+                            border-radius: 5px;
+                            background-color: rgb(207,232,220);
+                            ">
+                    Float</div>
+                <p>Text1</p>
+                <p>Text2</p>
+                <p>Text3</p>
+                <p>Text4</p>
+                <p>Text5</p>
+                <p>Text6</p>
+
+
+            </div>
+
+        </article>
+    </div>
+
+    <div class="container">
+        <article>
+            <p>The line boxes of our following element have been shortened so the text runs around the float, but due to
+                the float being removed from normal flow the box around the paragraph still remains full width.
+            </p>
+            <img src="images/second_float.png" alt="">
+            <div class="code-review">
+
+
+                <h1>Example</h1>
+
+                <div style="width: 150px;
+                            float: left;
+                            height: 100px;
+                            border-radius: 5px;
+                            background-color: rgb(207,232,220);
+                            padding: 1em;
+                            margin: 10px">
+                    Float</div>
+                <p style="  background-color: rgb(79,185,227);
+                              padding: 10px;
+                              color: #fff;">Text1</p>
+                <p>Text2</p>
+                <p>Text3</p>
+                <p>Text4</p>
+                <p>Text5</p>
+                <p>Text6</p>
+
+            </div>
+
+        </article>
+    </div>
+
+    <div class="container">
+        <article>
+            <p>We have seen that the float is removed from normal flow and that other elements will display beside it,
+                therefore if we want to stop the following element from moving up we need to clear it; this is achieved with the clear property.
+            </p>
+            <img src="images/third_float.png" alt="">
+            <div class="code-review">
+
+                <h1>Example</h1>
+
+                <div style="width: 150px;
+                            float: left;
+                            height: 100px;
+                            border-radius: 5px;
+                            background-color: rgb(207,232,220);
+                            padding: 1em;
+                            margin: 10px">
+                    Float</div>
+                <p style="  background-color: rgb(79,185,227);
+                              padding: 10px;
+                              color: #fff;">Text1</p>
+                <p style="clear: left">Text2</p>
+                <p>Text3</p>
+
+            </div>
+
+        </article>
+    </div>
+
+
+    <div class="container">
+        <article>
+            <p>Assume we have a tall float and a short paragraph, with a box wrapped around both elements. If put a background color on the paragraph, the background color runs behind the float.
+                The modern way of solving this problem is to use the value flow-root of the display property. This exists
+                only to create a BFC without using hacks — there will be no unintended consequences when you use it.
+            </p>
+            <img src="images/forth_float.png" alt="">
+            <div class="code-review">
+
+
+                <div style="background-color: rgb(79,185,227);
+                              padding: 10px;
+                              color: #fff;
+                              display: flow-root; ">
+
+                    <div style="width: 150px;
+                                float: left;
+                                height: 100px;
+                                border-radius: 5px;
+                                background-color: rgb(207,232,220);
+                                padding: 1em;
+                                margin: 10px">
+                        Float</div>
+                    <p style="  background-color: rgb(79,185,227);
+                                  padding: 10px;
+                                  color: #fff;">Text1</p>
+
+                     </div>
+                <p>Text3</p>
+                <p>Text4</p>
+
+                </div>
+
+        </article>
+    </div>
+
+
+</section>
+
+<footer>
+    <ul>
+        <li>
+            <ul>
+                <li><img src="images/logo-round-ukr.png" alt="" width="20%" height="20%"></li>
+                <li><p>Ukrainian Catholic University</p></li>
+                <li><p>&copy; 2020 Shakhov Mykhailo. Ukrainian Catholic University</p></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li><p id="footer-name">Shakhov Mykhailo</p></li>
+                <li>
+                    <a href="https://github.com/shakhovm">
+                        <img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png" alt=""
+                             width="32" height="32">
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</footer>
+</body>
+</html>
+

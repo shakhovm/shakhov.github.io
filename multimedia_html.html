@@ -23,7 +23,7 @@
         <nav id="main-navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about_page.html">About</a></li>
             </ul>
         </nav>
     </div>
@@ -31,8 +31,7 @@
 
 <section id="main-article">
     <div class="container">
-        <p>HTML provides a number of elements which can be used together to create forms
-            <br>which the user can fill out and submit to the Web site or application</p>
+        <p>HTML supports various multimedia resources such as images, audio, and video.</p>
     </div>
 </section>
 
@@ -43,15 +42,14 @@
     <div class="container">
         <article>
             <p>
-                The HTML <strong>&lt;button&gt;</strong> element represents a clickable button, used to submit forms or anywhere in a document
-                for accessible, standard button functionality. By default, HTML buttons are presented in a style
-                resembling the platform the user agent runs on, but you can change buttons’ appearance with CSS.
+                The HTML <strong>&lt;img&gt;</strong> element embeds an image into the document.
             </p>
-            <img src="images/Screenshot%20from%202020-04-18%2011-37-37.png" alt="">
+            <img src="images/img.png" alt="">
             <div class="code-review">
-                <button type="button">
-                    Add to favorites
-                </button>
+                <img class="fit-picture"
+                     src="images/GitHub-Mark/PNG/GitHub-Mark-64px.png"
+                     alt="Grapefruit slice atop a pile of other slices">
+
             </div>
 
         </article>
@@ -63,10 +61,15 @@
                 The HTML <strong>&lt;audio&gt;</strong> element is used to embed sound content in documents. It may contain one or more audio
                 sources, represented using the src attribute or the &lt;source&gt; element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.
             </p>
-            <img src="images/Screenshot%20from%202020-04-18%2011-37-37.png" alt="">
+            <img src="images/audio.png" alt="">
             <div class="code-review">
+
                 <p>Listen to the water sound</p>
                 <audio controls src="audio/xxx.mp3"></audio>
+
+
+
+
             </div>
 
         </article>
@@ -74,82 +77,49 @@
 
     <div class="container">
         <article>
-            The HTML &lt;form&gt; element
-            represents a document section containing interactive controls for submitting information.
-            <img src="images/Screenshot%20from%202020-04-18%2011-37-37.png" alt="">
+            <p>The HTML Video element (<strong>&lt;video&gt;</strong>) embeds a media player which supports video playback into the document.
+            You can use &lt;video&gt; for audio content as well, but the &lt;audio&gt; element may provide a more appropriate user experience.
+            </p>
+            <img src="images/video.png" alt="">
             <div class="code-review">
-                <form action="" method="get">
-                    <div>
-                        <label for="name">Enter your name: </label>
-                        <input type="text" name="name" id="name" required>
-                    </div>
-                    <div>
-                        <label for="email">Enter your email: </label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div>
-                        <input type="submit" value="Subscribe!">
-                    </div>
-                </form>
+
+
+                <video controls width="250">
+                    <source src="audio/River.mp4"
+                            type="video/mp4">
+                </video>
+
+
+
             </div>
 
         </article>
     </div>
 
-
-    <div class="container">
-        <article>
-            The HTML &lt;form&gt; element
-            represents a document section containing interactive controls for submitting information.
-            <img src="images/Screenshot%20from%202020-04-18%2011-37-37.png" alt="">
-            <div class="code-review">
-                <label for="pet-select">Choose a pet:</label>
-
-                <select id="pet-select">
-                    <option value="">--Please choose an option--</option>
-                    <option value="dog">Dog</option>
-                    <option value="cat">Cat</option>
-                    <option value="hamster">Hamster</option>
-                    <option value="parrot">Parrot</option>
-                    <option value="spider">Spider</option>
-                    <option value="goldfish">Goldfish</option>
-                </select>
-            </div>
-
-        </article>
-    </div>
-
-    <div class="container">
-        <article></article>
-    </div>
-
-    <div class="container">
-        <article><p>The HTML &lt;meter&gt; element represents either a scalar value within a
-            known range or a fractional value.</p>
-            <img src="images/Screenshot%20from%202020-04-18%2011-37-37.png" alt="">
-            <div class="code-review" >
-                <label for="fuel">Fuel level:</label>
-
-                <meter id="fuel"
-                       min="0" max="100"
-                       low="33" high="66" optimum="80"
-                       value="50">
-                    at 50/100
-                </meter>
-            </div>
-        </article>
-    </div>
 </section>
 
 <footer>
-    <img src="images/logo-round-ukr.png" alt="" width="5%" height="5%">
-    <p id="image-describer">Ukrainian Catholic University</p>
-    <p id="footer-name">Shakhov Mykhailo</p>
-    <p id="xx">&copy; 2020 Shakhov Mykhailo. Ukrainian Catholic University</p>
-    <a href="https://github.com/shakhovm" id="github-logo" >
-        <img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png" alt=""
-             width="32" height="32">
-    </a>
+    <ul>
+        <li>
+            <ul>
+                <li><img src="images/logo-round-ukr.png" alt="" width="20%" height="20%"></li>
+                <li><p>Ukrainian Catholic University</p></li>
+                <li><p>&copy; 2020 Shakhov Mykhailo. Ukrainian Catholic University</p></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li><p id="footer-name">Shakhov Mykhailo</p></li>
+                <li>
+                    <a href="https://github.com/shakhovm">
+                        <img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png" alt=""
+                             width="32" height="32">
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
 </footer>
 
 </body>

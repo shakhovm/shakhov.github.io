@@ -19,11 +19,12 @@ section#content image {
 .code-review {
     background-color: white;
     color: black;
-    display: inline-block;
+    display: flow-root;
     float: right;
     width: 50%;
-    height: 200px;
-    /*margin: 0;*/
+    height: 150%;
+    text-align: left;
+    margin: 10px;
     /*padding: 0;*/
 }
 

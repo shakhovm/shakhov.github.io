@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form_page_style.css">
+    <link rel="stylesheet" href="css/html_page_style.css">
+    <title>Title</title>
+
+</head>
+<body>
+
+<header>
+    <div class="header-block">
+        <img src="images/logo-round-ukr.png" alt="" width="317" height="300">
+
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_page.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="main-article">
+    <div class="container">
+        <p>CSS animations make it possible to animate transitions from one CSS style configuration to another. Animations consist of two components, a style describing the CSS animation and a set of keyframes that indicate the start and end states of the animation’s style, as well as possible intermediate waypoints.
+
+            There are three key advantages to CSS animations over traditional script-driven animation techniques:
+        </p>
+        <ol style="text-align: left">
+            <li>They’re easy to use for simple animations; you can create them without even having to know JavaScript.
+            </li>
+            <li>The animations run well, even under moderate system load. Simple animations can often perform poorly in
+                JavaScript (unless they’re well made). The rendering engine can use frame-skipping and other techniques
+                to keep the performance as smooth as possible.
+            </li>
+            <li>Letting the browser control the animation sequence lets the browser optimize performance and efficiency
+                by, for example, reducing the update frequency of animations running in tabs that aren't currently
+                visible.
+            </li>
+        </ol>
+
+
+
+    </div>
+</section>
+
+
+<section id="content">
+
+
+    <div class="container">
+        <article>
+            <p>
+                This simple example styles the &lt;p&gt; element so that the text slides in from off the right edge of the browser window.
+            </p>
+            <img src="images/inimation_1.png" alt="">
+
+            <div class="code-review">
+
+                <style>
+                    .animation-class {
+                        animation-duration: 3s;
+                        animation-name: slidein;
+                    }
+                    @keyframes slidein {
+                        from {
+                            margin-left: 100%;
+                            width: 300%;
+                        }
+
+                        to {
+                            margin-left: 0;
+                            width: 100%;
+                        }
+                    }
+                </style>
+                <p class="animation-class">
+                    Example Example ExampleExample.
+                </p>
+
+            </div>
+
+        </article>
+    </div>
+
+    <div class="container">
+        <article>
+            <p>
+                Let’s add another keyframe to the previous example’s animation. Let’s say we want the header’s font size to increase as it moves from right to left for a while, then to decrease back to its original size. That’s as simple as adding this keyframe:
+            </p>
+            <img src="images/animation_2.png" alt="">
+
+            <div class="code-review">
+
+                <style>
+                    .animation-class2 {
+                        animation-duration: 3s;
+                        animation-name: big-slide;
+                    }
+                    @keyframes big-slide {
+                        from {
+                            margin-left: 100%;
+                            width: 300%;
+                        }
+                        75% {
+                            font-size: 300%;
+                            margin-left: 25%;
+                            width: 150%;
+                        }
+                        to {
+                            margin-left: 0%;
+                            width: 100%;
+                        }
+                    }
+                </style>
+                <p class="animation-class2">
+                    Example Example ExampleExample.
+                </p>
+
+            </div>
+
+        </article>
+    </div>
+
+    <div class="container">
+        <article>
+            <p>
+                That made it repeat, but it’s very odd having it jump back to the start each time it begins animating. What we really want is for it to move back and forth across the screen. That’s easily accomplished by setting animation-direction to alternate:
+            </p>
+            <img src="images/animation_3.png" alt="">
+
+            <div class="code-review">
+
+                <style>
+                    .animation-class3 {
+                        animation-duration: 3s;
+                        animation-name: slidein3;
+                        animation-iteration-count: infinite;
+                        animation-direction: alternate;
+                    }
+                    @keyframes slidein3 {
+                        from {
+                            margin-left: 100%;
+                            width: 300%;
+                        }
+                        to {
+                            margin-left: 0%;
+                            width: 100%;
+                        }
+                    }
+                </style>
+                <p class="animation-class3">
+                    Example Example ExampleExample.
+                    Example Example ExampleExample.
+                    Example Example ExampleExample.
+                    Example Example ExampleExample.
+                    Example Example ExampleExample.
+                </p>
+
+            </div>
+
+        </article>
+    </div>
+
+
+</section>
+
+<footer>
+    <ul>
+        <li>
+            <ul>
+                <li><img src="images/logo-round-ukr.png" alt="" width="20%" height="20%"></li>
+                <li><p>Ukrainian Catholic University</p></li>
+                <li><p>&copy; 2020 Shakhov Mykhailo. Ukrainian Catholic University</p></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li><p id="footer-name">Shakhov Mykhailo</p></li>
+                <li>
+                    <a href="https://github.com/shakhovm">
+                        <img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png" alt=""
+                             width="32" height="32">
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</footer>
+</body>
+</html>
+

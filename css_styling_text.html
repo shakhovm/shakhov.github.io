@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form_page_style.css">
+    <link rel="stylesheet" href="css/html_page_style.css">
+    <title>Title</title>
+
+</head>
+<body>
+
+<header>
+    <div class="header-block">
+        <img src="images/logo-round-ukr.png" alt="" width="317" height="300">
+
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_page.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="main-article">
+    <div class="container">
+        <p>HTML provides a number of elements which can be used together to create forms
+            <br>which the user can fill out and submit to the Web site or application</p>
+    </div>
+</section>
+
+
+<section id="content">
+
+
+    <div class="container">
+        <article>
+            <p>
+                The <strong>color</strong> property sets the color of the foreground content of the selected elements (which is usually
+                the text, but can also include a couple of other things, such as an underline or overline placed on text using the text-decoration property).
+            </p>
+            <img src="images/style_1.png" alt="">
+            <div class="code-review">
+
+
+                <p style="color: red">Some example</p>
+                <p style="color: blue">Some example</p>
+                <p style="color: green">Some example</p>
+                <p style="color: #b543ff">Some example</p>
+
+
+
+            </div>
+
+        </article>
+    </div>
+
+    <div class="container">
+        <article>
+            <p>
+                To set a different font on your text, you use the <strong>font-family</strong> property — this allows you to specify
+                a font (or list of fonts) for the browser to apply to the selected elements. The browser will only apply a font if it is available on the machine the website is being accessed on; if not, it will just use a browser default font.
+            </p>
+            <img src="images/style_2.png" alt="">
+            <div class="code-review">
+
+
+
+                <p style="font-family: C059,serif">Some example</p>
+                <p style="font-family: Cantarell,fantasy">Some example</p>
+                <p style="font-family: 'URW Bookman',sans-serif">Some example</p>
+
+
+
+
+
+            </div>
+
+        </article>
+    </div>
+
+    <div class="container">
+        <article>
+            <p>
+                In our previous module's CSS values and units article, we reviewed length and size units.
+                Font size (set with the <strong>font-size</strong> property) can take values measured in
+                most of these units (and others, such as percentages)
+            </p>
+            <img src="images/style_3.png" alt="">
+            <div class="code-review">
+
+
+
+
+                <p style="font-size: 30px">Some example</p>
+                <p style="font-size: 2em">Some example</p>
+                <p style="font-size: 50%">Some example</p>
+
+
+
+
+            </div>
+
+        </article>
+    </div>
+
+
+    <div class="container">
+        <article>
+            <p><strong>font-style</strong>: Used to turn italic text on and off. Possible
+                values are as follows (you'll rarely use this, unless you want to turn some italic styling off for some reason):
+            </p>
+            <ul>
+                <li style="text-align: left">normal: Sets the text to the normal font (turns existing italics off.)</li>
+                <li style="text-align: left">italic: Sets the text to use the italic version of the font if available; if not available, it will simulate italics with oblique instead.</li>
+                <li style="text-align: left">oblique: Sets the text to use a simulated version of an italic font, created by slanting the normal version.</li>
+            </ul>
+
+
+
+            <img src="images/style_4.png" alt="">
+            <div class="code-review">
+
+
+                <p style="font-style: italic">Example</p>
+                <p style="font-style: normal">Example</p>
+                <p style="font-style: oblique">Example</p>
+
+
+            </div>
+
+        </article>
+    </div>
+
+    <div class="container">
+        <article></article>
+    </div>
+
+    <div class="container">
+        <article><p><strong>font-weight</strong>: Sets how bold the text is. This has many values available in case you have many font variants available (such as -light, -normal, -bold, -extrabold, -black, etc.), but realistically you'll rarely use any of them except for normal and bold:</p>
+            <ul>
+                <li style="text-align: left;">normal, bold: Normal and bold font weight</li>
+                <li style="text-align: left;">lighter, bolder: Sets the current element's boldness to be one step lighter or heavier than its parent element's boldness.</li>
+                <li style="text-align: left;">100–900: Numeric boldness values that provide finer grained control than the above keywords, if needed.</li>
+            </ul>
+            <img src="images/style_5.png" alt="">
+            <div class="code-review">
+
+
+                <p style="font-weight: bold">Example</p>
+                <p style="font-weight: lighter">Example</p>
+                <p style="font-weight: 900">Example</p>
+
+
+            </div>
+        </article>
+    </div>
+
+    <div class="container">
+        <article><p>
+            <strong>text-decoration</strong>: Sets/unsets text decorations on fonts (you'll mainly use this to unset the default underline on links when styling them.) Available values are:
+            </p>
+            <ul style="text-align: left">
+                <li style="text-decoration: unset">none: Unsets any text decorations already present.</li>
+                <li style="text-decoration: underline;">underline: Underlines the text.</li>
+                <li style="text-decoration: overline;">overline: Gives the text an overline.</li>
+                <li style="text-decoration: line-through;">line-through: Puts a strikethrough over the text.</li>
+            </ul>
+
+
+
+
+            <img src="images/style_6.png" alt="">
+
+
+            <div class="code-review">
+
+
+                <p style="text-decoration: underline;">Example</p>
+                <p style="text-decoration: overline;">Example</p>
+                <p style="text-decoration: line-through;">Example</p>
+
+
+            </div>
+        </article>
+    </div>
+
+    <div class="container">
+        <article><p>
+            You can apply drop shadows to your text using the <strong>text-shadow property</strong>. This takes up to four values, as shown in the example below:
+            The four properties are as follows:</p>
+            <ol style="text-align: left">
+                <li>The horizontal offset of the shadow from the original text — this can take most available CSS length and size units, but you'll most commonly use px; positive values move the shadow right, and negative values left. This value has to be included.</li>
+                <li>The vertical offset of the shadow from the original text; behaves basically just like the horizontal offset, except that it moves the shadow up/down, not left/right. This value has to be included.</li>
+                <li>The blur radius — a higher value means the shadow is dispersed more widely. If this value is not included, it defaults to 0, which means no blur. This can take most available CSS length and size units.</li>
+                <li>The base color of the shadow, which can take any CSS color unit. If not included, it defaults to black.</li>
+            </ol>
+
+            <img src="images/style_7.png" alt="">
+            <div class="code-review">
+
+
+                <p style="text-shadow: 4px 4px 5px red;">Example</p>
+                <p style="text-shadow: 4px 4px 5px red,
+                 2px 2px 1px green;">Multiple Shadows</p>
+
+
+            </div>
+        </article>
+    </div>
+</section>
+
+<footer>
+    <ul>
+        <li>
+            <ul>
+                <li><img src="images/logo-round-ukr.png" alt="" width="20%" height="20%"></li>
+                <li><p>Ukrainian Catholic University</p></li>
+                <li><p>&copy; 2020 Shakhov Mykhailo. Ukrainian Catholic University</p></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li><p id="footer-name">Shakhov Mykhailo</p></li>
+                <li>
+                    <a href="https://github.com/shakhovm">
+                        <img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png" alt=""
+                             width="32" height="32">
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</footer>
+</body>
+</html>
+
