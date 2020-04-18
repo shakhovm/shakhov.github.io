@@ -1,0 +1,35 @@
+section#content article {
+    text-align: center;
+
+    margin: 3% 10px 0;
+    border: azure solid;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+section#content strong {
+    color: red;
+}
+
+section#content image {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.code-review {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    float: right;
+    width: 50%;
+    height: 200px;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+@media (max-width: 1267px) {
+    .code-review {
+        float: none;
+    }
+}
+

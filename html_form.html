@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form_page_style.css">
+    <link rel="stylesheet" href="css/html_page_style.css">
+    <title>Title</title>
+
+</head>
+<body>
+
+<header>
+    <div class="header-block">
+        <img src="images/logo-round-ukr.png" alt="" width="317" height="300">
+
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="main-article">
+    <div class="container">
+        <p>HTML provides a number of elements which can be used together to create forms
+            <br>which the user can fill out and submit to the Web site or application</p>
+    </div>
+</section>
+
+
+<section id="content">
+
+
+    <div class="container">
+        <article>
+            <p>
+                The HTML <strong>&lt;button&gt;</strong> element represents a clickable button, used to submit forms or anywhere in a document
+                for accessible, standard button functionality. By default, HTML buttons are presented in a style
+                resembling the platform the user agent runs on, but you can change buttons’ appearance with CSS.
+            </p>
+            <img src="images/Screenshot%20from%202020-04-18%2011-37-37.png" alt="">
+            <div class="code-review">
+                <button type="button">
+                    Add to favorites
+                </button>
+            </div>
+
+        </article>
+    </div>
+
+    <div class="container">
+        <article>
+            <p>
+                The HTML &lt;input&gt; element is used to create interactive controls for web-based forms in order to accept
+                data from the user; a wide variety of types of input data and control widgets are available, depending
+                on the device and user agent. The &lt;input&gt; element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.
+            </p>
+            <img src="images/Screenshot%20from%202020-04-18%2011-37-37.png" alt="">
+            <div class="code-review">
+                <label for="name1">Name (4 to 8 characters):</label>
+
+                <input type="text" id="name1" name="name" required
+                       minlength="4" maxlength="8" size="10">
+
+            </div>
+
+        </article>
+    </div>
+
+    <div class="container">
+        <article>
+            The HTML &lt;form&gt; element
+            represents a document section containing interactive controls for submitting information.
+            <img src="images/Screenshot%20from%202020-04-18%2011-37-37.png" alt="">
+            <div class="code-review">
+                <form action="" method="get">
+                    <div>
+                        <label for="name">Enter your name: </label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Enter your email: </label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Subscribe!">
+                    </div>
+                </form>
+            </div>
+
+        </article>
+    </div>
+
+
+    <div class="container">
+        <article>
+            The HTML &lt;form&gt; element
+            represents a document section containing interactive controls for submitting information.
+            <img src="images/Screenshot%20from%202020-04-18%2011-37-37.png" alt="">
+            <div class="code-review">
+                <label for="pet-select">Choose a pet:</label>
+
+                <select id="pet-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                </select>
+            </div>
+
+        </article>
+    </div>
+
+    <div class="container">
+        <article></article>
+    </div>
+
+    <div class="container">
+        <article><p>The HTML &lt;meter&gt; element represents either a scalar value within a
+            known range or a fractional value.</p>
+            <img src="images/Screenshot%20from%202020-04-18%2011-37-37.png" alt="">
+            <div class="code-review" >
+            <label for="fuel">Fuel level:</label>
+
+            <meter id="fuel"
+                   min="0" max="100"
+                   low="33" high="66" optimum="80"
+                   value="50">
+                at 50/100
+            </meter>
+            </div>
+        </article>
+    </div>
+</section>
+
+<footer>
+    <img src="images/logo-round-ukr.png" alt="" width="5%" height="5%">
+    <p id="image-describer">Ukrainian Catholic University</p>
+    <p id="footer-name">Shakhov Mykhailo</p>
+    <p id="xx">&copy; 2020 Shakhov Mykhailo. Ukrainian Catholic University</p>
+    <a href="https://github.com/shakhovm" id="github-logo" >
+        <img src="images/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png" alt=""
+             width="32" height="32">
+    </a>
+</footer>
+
+</body>
+</html>
