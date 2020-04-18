@@ -147,11 +147,12 @@ footer a {
     padding-left: 35px;
 }
 
-@media(max-width: 850px) {
-    header nav, header li,
-    .content-block, #content {
-        width: 100%;
-        float:none;
-        text-align: center;
+@media(max-width: 900px) {
+    .content-block {
+        width: 99%;
+        padding: 0;
+        margin: 10% 0 10% 0;
+        float: none;
+        /*float:none;*/
     }
 }
